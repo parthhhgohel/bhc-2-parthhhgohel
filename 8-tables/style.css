@@ -1,1 +1,133 @@
 /* write your css here */
+
+/*
+    SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+    FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* 
+    MAIN COLOR: #087f5b
+    GREY COLOR: #343a40
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    height: 20vh;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+.heading{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1{
+    font-weight: 600;
+}
+
+p{
+    font-size: large;
+}
+
+button{
+    height: 50px;
+    width: 100px;
+    background-color: rgba(62, 32, 233, 0.877);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 550;
+}
+
+table{
+    font-size: larger;
+    width: 90%;
+    border-collapse: collapse;
+}
+
+th{
+    width: 25%;
+    border: 1px solid rgb(206, 206, 206);
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    height: 70px;
+    text-align: left;
+}
+
+tr{
+    border: 1px solid rgb(206, 206, 206);
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+
+tr:last-child{
+    border-bottom: none;
+}
+
+.name-title{
+    width: 22.5%;
+}
+
+.email{
+    width: 35%;
+}
+
+.role{
+    width: 15%;
+}
+
+.actions{
+    width: 15%;
+}
+
+.name{
+    font-weight: 500;
+    color: black;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+.link{
+    text-align: right;
+}
+
+td{
+    border-collapse: collapse;
+    border: 1px solid rgb(206, 206, 206);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    height: 70px;
+    align-items: left;
+    color: rgb(112, 112, 112);
+    text-align: left;
+}
