@@ -15,118 +15,142 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'); */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  background: radial-gradient(
+    farthest-corner at 50px 200px,
+    rgba(184, 89, 184, 0.23) 0%,
+    rgb(255, 255, 255) 15%
+  );
 }
 
 .container {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    gap: 35px;
-
-    background: radial-gradient(farthest-corner at 50px 200px,
-            rgba(184, 89, 184, 0.397) 0%,
-            rgb(255, 255, 255) 15%);
-
+  height: 100vh;
+  width: 65%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  /* justify-content: space-evenly; */
+  flex-direction: column;
+  gap: 35px;
 }
 
 .heading {
-    /* border: 2px solid blue; */
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    height: 20vh;
-    width: 45%;
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  width: 45%;
 }
 
 .heading h1 {
-    font-size: 42px;
-    line-height: .8;
+  font-size: 42px;
+  line-height: 0.8;
 }
 
 .heading p {
-    color: rgb(102, 102, 102);
-    font-weight: 400;
-    font-size: 18px;
+  color: rgb(102, 102, 102);
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .input-container {
-    height: 80vh;
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    font-weight: 550;
-    gap: 30px;
-    font-size: 14px;
+  height: 80vh;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 550;
+  gap: 28px;
+  font-size: 16px;
 }
 
 .input {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  color: #515151 !important;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .name {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
 }
 
 .first,
 .last {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-input{
-    width: 100%;
-    height: 36px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    border: 2px solid rgba(128, 128, 128, 0.171);
+input {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid rgba(128, 128, 128, 0.171);
 }
 
-textarea{
-    width: 100%;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    border: 2px solid rgba(128, 128, 128, 0.171);
+number::placeholder {
+  margin-left: 10px;
+  color: rgb(173, 169, 169);
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid rgba(128, 128, 128, 0.171);
+  color: #515151 !important;
 }
 
 .checkbox {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 15px;
-    color: rgb(100, 100, 100);
+  margin-top: -13px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+  color: rgb(100, 100, 100);
 }
 
 .checkbox input {
-    width: 25px;
+  width: 25px;
+  color: #202020;
 }
 
-a:link, a:visited{
-    text-decoration: none;
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(38, 55, 214);
 }
 
 button {
-    width: 100%;
-    height: 36px;
-    font-size: 16px;
-    border: none;
-    border-radius: 10px;
-    background-color: rgb(62, 79, 231);
-    color: white;
+  width: 100%;
+  height: 36px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(62, 79, 231);
+  color: white;
+}
+
+button:hover {
+  background-color: rgb(38, 55, 214);
 }

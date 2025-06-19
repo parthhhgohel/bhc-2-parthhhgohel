@@ -15,127 +15,180 @@
 */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'fira sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "fira sans", sans-serif;
 }
 
-body{
-    /* background-color: #087f5b; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: hsla(300, 100%, 97%, 0.192);
-    font-weight: 550;
-    color: rgb(0, 0, 0);
+body {
+  /* background-color: #087f5b; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsla(300, 100%, 97%, 0.192);
+  font-weight: 550;
 }
 
-.container{
-    /* border: 2px solid green; */
-    width: 40%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 20px;
-    align-items: center;
+.container {
+  /* border: 2px solid green; */
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  align-items: center;
 }
 
-img{
-    width: 65px;
-    margin: 0 auto;
+.container h1 {
+  color: rgb(46, 46, 46);
 }
 
-form{
-    padding: 70px 60px;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    background-color: white;
-    box-shadow: 0 0 2px  rgb(170, 170, 170);
-    border-radius: 8px;
+img {
+  width: 65px;
+  margin: 0 auto;
 }
 
-.input{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    color: rgb(82, 82, 82);
-
+form {
+  padding: 70px 60px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(218, 218, 218, 0.674);
+  border-radius: 8px;
 }
 
-.checkbox{
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    flex-direction: row;
+.input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: rgb(82, 82, 82);
 }
 
-input{
-    font-size: 16px;
-    display: block;
-    height: 35px;
-    border-radius: 5px;
-    border: 1px solid rgba(73, 73, 73, 0.411);
+.checkbox {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  justify-content: space-between;
+  flex-direction: row;
 }
 
-button{
-    font-size: 16px;
-    font-weight: 500;
-    height: 45px;
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(57, 57, 180);
-    color: rgba(255, 255, 255, 0.925);
+.checkbox input {
+  height: 20px;
+  width: 20px;
+  border: none;
 }
 
-p{
-    /* border: 1px solid black; */
-    color: rgb(109, 109, 109);
+.checkbox a {
+  margin-left: auto;
+  color: #008ad8;
 }
 
-.continue-with{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: space-evenly;
-    color: white;
+.checkbox a:hover {
+  color: #0076ba;
 }
 
-.continue-with .btn{
-    display: flex;
-    gap: 10px;
-    padding: 12px 90px;
-    border-radius: 8px;
-    /* background-color: #008AD8; */
+input {
+  font-size: 16px;
+  display: block;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgba(117, 117, 117, 0.411);
 }
 
-.twitter-icon{
-    fill: white;
-    /* background-color: #008AD8; */
-    /* stroke: white; */
+button {
+  font-size: 16px;
+  font-weight: 500;
+  height: 45px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(57, 57, 180);
+  color: rgba(255, 255, 255, 0.925);
 }
 
-.github-icon{
-    fill: white;
-    /* background-color: black; */
+button:hover {
+  background-color: rgb(44, 44, 184);
 }
 
-.github{
-    background-color: black;
+p {
+  /* border: 1px solid black; */
+  color: rgb(109, 109, 109);
 }
 
-.twitter{
-    background-color: #008AD8;
+div {
+  position: relative;
 }
 
-a{
-    text-decoration: none;
-    color: #5c37b3;
-    font-weight: 600;
+.continue::before,
+.continue::after {
+  content: "";
+  width: 170px;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  /* left: 0; */
+  background-color: rgba(171, 171, 171, 0.688);
+}
+
+.continue::before {
+  left: 0;
+}
+
+.continue::after {
+  right: 0;
+}
+
+.continue-with {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.continue-with .btn {
+  display: flex;
+  gap: 10px;
+  padding: 12px 90px;
+  border-radius: 8px;
+}
+
+.twitter-icon {
+  fill: white;
+}
+
+.github-icon {
+  fill: white;
+}
+
+.github {
+  background-color: rgb(48, 48, 48);
+}
+.github:hover {
+  background-color: rgb(67, 67, 67);
+}
+
+.twitter {
+  background-color: #008ad8;
+  cursor: pointer;
+}
+
+.twitter:hover {
+  background-color: #0076ba;
+}
+
+a {
+  text-decoration: none;
+  color: #008ad8;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #0076ba;
 }

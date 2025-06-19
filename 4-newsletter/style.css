@@ -15,86 +15,93 @@
 */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'fira sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "fira sans", sans-serif;
 }
 
 .body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-    height: 80vh;
-    width: 95%;
-    margin: 90px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(farthest-corner at 950px 900px,
-            rgb(92, 42, 92) 0%,
-            rgb(18, 19, 34) 50%);
-    border-radius: 25px;
-    position: relative;
+  height: 100vh;
+  width: 100%;
+  /* margin: 90px auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(
+    farthest-corner at 950px 900px,
+    rgb(78, 43, 78) 0%,
+    rgb(18, 19, 34) 50%
+  );
+  /* border-radius: 25px; */
+  position: relative;
 }
 
 .inner-container {
-    width: 60%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    border: 2px solid black;
+  width: 60%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  /* border: 2px solid black; */
 }
 
 .heading {
-    color: white;
-    font-weight: bold;
-    font-size: 62px;
-    text-align: center;
-    line-height: .1;
+  color: white;
+  font-weight: bold;
+  font-size: 62px;
+  text-align: center;
+  line-height: 0.1;
 }
 
 .info {
-    color: #bfbfbf;
-    font-size: 24px;
-    line-height: 1.5;
-    text-align: center;
-    margin: 0px 60px;
+  color: #bfbfbf;
+  font-size: 30px;
+  line-height: 1.7;
+  text-align: center;
+  margin: 0px 60px;
 }
 
 .input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 12px;
 }
 
 .input input {
-    padding: 10px 20px;
-    /* border: 2px solid gray; */
-    outline: none;
-    border: none;
-    border: 2px solid gray;
-    border-radius: 10px;
-    background-color: rgba(58, 58, 58, 0.781);
-    font-size: 20px;
-    color: gray;
-    width: 500px;
-    display: inline-block;
+  padding: 10px 20px;
+  /* border: 2px solid gray; */
+  outline: none;
+  border: none;
+  border: 2px solid rgba(128, 128, 128, 0.19);
+  border-radius: 10px;
+  background-color: rgba(105, 105, 105, 0.184);
+  font-size: 28px;
+  color: gray;
+  width: 500px;
+  display: inline-block;
 }
 
 .input button {
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 20px;
-    background-color: white;
-    font-weight: bold;
-    color: black;
-    cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: white;
+  font-weight: bold;
+  color: rgb(61, 61, 61);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(233, 233, 233);
 }
